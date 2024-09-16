@@ -1,0 +1,54 @@
+<!-- to make file html press ! and enter -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let body= document.querySelector("body");
+        body.style.margin= "0";
+
+        let container = document.createElement("div")
+        container.style.width= "100%"
+        container.style.height= "100%vh"/* vh=view height */
+        /* container.style.position= "relative" */
+        container.style.backgroundColor= "red"
+        body.appendChild(container);/* to add container to body */
+
+        let black = document.createElement("div")
+        black.style.position="absolute"
+        black.style.top="0"
+        black.style.width="100%"
+        black.style.height="33.3333%"
+        black.style.backgroundColor= "black"
+        container.appendChild(black)
+
+        let green = document.createElement("div")
+        green.style.position="absolute"
+        green.style.bottom="0"
+        green.style.width="100%"
+        green.style.height="33.3333%"
+        green.style.backgroundColor= "green"
+        container.appendChild(green)
+
+        /* let red = document.createElement("div")
+        red.style.position="absolute"/* to make top and bottom work */
+        /* red.style.top="33.3333%" 
+        red.style.width="40%"
+        red.style.height="100%"
+        red.style.backgroundColor= "red"
+        container.appendChild(red) */
+
+        let red = document.createElement("div")
+        red.style.position="absolute"
+        red.style.borderStyle="solid"
+        red.style.borderColor="transparent transparent transparent red"
+        red.style.borderWidth= "50vh"
+        container.appendChild(red)
+
+    </script>
+</body>
+</html>
